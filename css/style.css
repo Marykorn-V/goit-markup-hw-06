@@ -780,15 +780,29 @@ a p {
   right: 8px;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--accent-text-color);
+
+  transition: border-color 250ms var(--time-function);
+}
+.close-modal:hover,
+.close-modal:focus {
+  border-color: var(--accent-text-color);
 }
 .close-modal-icon {
   display: block;
   width: 30px;
   height: 30px;
   padding: 6px;
+
+  transition: fill 250ms var(--time-function);
+}
+.close-modal-icon:hover,
+.close-modal-icon:focus {
+  fill: currentColor;
 }
 .is-hidden {
   visibility: hidden;
